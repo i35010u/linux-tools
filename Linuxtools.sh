@@ -56,5 +56,9 @@ case $input in
  source;;
  3)apt install qemu-system-*
  source;;
- 4)echo "敬请期待下次更新"
+ 4)wget https://download.qemu.org/qemu-6.1.0.tar.xz
+ tar xvJf qemu-6.1.0.tar.xz
+ cd qemu-6.1.0
+ ./configure
+ 
 esac
